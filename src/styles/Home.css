@@ -1,0 +1,141 @@
+/* Estilos generales */
+:root {
+    --primary-color: #4A90E2;
+    --secondary-color: #FFFFFF;
+    --text-color: #333333;
+    --background-color: #F9F9F9;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+  
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+  
+.home-container {
+    padding: 20px;
+    text-align: center;
+}
+  
+h1 {
+    color: var(--primary-color);
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+  
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+  
+.product-card {
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px var(--shadow-color);
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+    cursor: pointer;
+}
+  
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+  
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+  
+h2 {
+    color: var(--primary-color);
+    font-size: 1.8em;
+    margin: 10px 0;
+}
+  
+p {
+    color: #777;
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+  
+.price {
+    color: #28A745;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.modal-overlay {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; 
+}
+  
+.modal-content {
+    background: #fff; 
+    padding: 10px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    max-width: 300px; 
+    width: 90%; 
+    text-align: center;
+}
+  
+.modal-content img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px; 
+}
+  
+.modal-content button {
+    margin-top: 100px;
+    padding: 8px 12px;
+    background-color: #007bff; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+}
+  
+.modal-content button:hover {
+    background-color: #0056b3; 
+}
+
+
+.add-product-button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.add-product-button:hover {
+    background-color: #357ABD;
+    margin: 500px;
+}
